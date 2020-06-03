@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<br />
+
+<div class="container row p-0 m-0">
+    <div class="col-6">
+        <h2 class="text-info">Book List</h2>
+    </div>
+    <div class="col-3 offset-3">
+        <a asp-action="Upsert" asp-controller="Products" class="btn btn-info form-control text-white">
+            Add New Product
+        </a>
+    </div>
+    <div class="col-12 border p-3">
+        <table id="productload" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ProductName</th>
+                    <th>ProductName</th>
+                    <th>ProductName</th>
+                    <th>ProductName</th>
+                    <th>ProductName</th>
+                    <th></th>
+                    
+                   
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <br />
+
+
+
+</div>
+
+@section Scripts{
+    @*<script src="~/js/bookList.js"></script>*@
+    <script src="~/js/ProductList.js"></script>
+}
